@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.SaleFragment.UserCycle.User_Continue_Regiseter_Fragment">
+<ScrollView
+    android:layout_marginStart="@dimen/dim_m"
+    android:layout_marginEnd="@dimen/dim_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <Spinner
+            android:id="@+id/Fragment_seller_register_Categotry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Fragment_sale_User_Cahe_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_below="@id/relative"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_2xl">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_attach_money_black_24dp"
+            android:drawablePadding="@dimen/dim_m"
+            android:hint="الحد الادني للطلب "
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="@dimen/txt_size_l"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Fragment_sale_User_delivery_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_below="@id/Fragment_sale_User_Cahe_money"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginBottom="@dimen/dim_l">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_attach_money_black_24dp"
+            android:drawablePadding="@dimen/dim_m"
+            android:hint="الحد الادني للطلب "
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="@dimen/txt_size_l"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Switch
+        android:id="@+id/registerMoreRestaurantSwitchState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="state"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/dim_m"
+        android:layout_below="@+id/Fragment_sale_User_delivery_money"
+
+         />
+
+
+    <TextView
+        android:id="@+id/Txt_thre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerMoreRestaurantSwitchState"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:text=" بيانات التوصيل "
+        android:textColor="@color/Black"
+        android:textSize="@dimen/txt_size_xl" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Fragment_sale_User_number_of_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_below="@id/Txt_thre"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl">
+
+        <android.support.design.widget.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/phone"
+            android:drawablePadding="@dimen/dim_m"
+            android:hint=" الجوال"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="@dimen/txt_size_l"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Fragment_sale_Whatsup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_below="@id/Fragment_sale_User_number_of_phone"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_2xl">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/whatsapp1"
+            android:drawablePadding="@dimen/dim_m"
+            android:hint="واتس اب "
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="@dimen/txt_size_l"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/id_thro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Fragment_sale_Whatsup"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:text=" صورة المتجر"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/txt_size_xl" />
+
+    <ImageView
+        android:id="@+id/Fragment_sale_User_Image_Matgar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/id_thro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dim_m"
+        android:background="@drawable/shapephoto"
+        android:layout_marginEnd="@dimen/dim_xl"
+        android:src="@drawable/ic_store_mall_directory_black_24dp" />
+
+    <Button
+        android:id="@+id/Fragment_sale_User_Register"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Fragment_sale_User_Image_Matgar"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shapebutton"
+        android:drawableStart="@drawable/enter"
+        android:textColor="@color/white"
+        android:text=" تسجيل الدخول " />
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

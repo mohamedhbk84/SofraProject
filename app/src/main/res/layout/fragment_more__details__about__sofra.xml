@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.SaleFragment.HomeCycle.More_Details_About_SofraFragment">
+<TextView
+    android:id="@+id/th"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_3xl"
+    android:gravity="center"
+    android:text="المزيد"
+    android:textColor="@color/Black"
+    android:textSize="@dimen/dim_xl"
+    android:layout_margin="@dimen/dim_xl"
+    />
+<TextView
+    android:id="@+id/Present"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_3xl"
+    android:paddingTop="@dimen/dim_m"
+
+    android:drawableEnd="@drawable/icon_offer"
+    android:paddingEnd="@dimen/dim_m"
+    android:text=" عروضي"
+    android:textColor="@color/Black"
+    android:layout_marginTop="@dimen/dim_m"
+    android:layout_marginBottom="@dimen/dim_m"
+    android:textSize="@dimen/dim_xl"
+    android:layout_below="@id/th"/>
+    <TextView
+        android:id="@+id/connect_Me"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:drawableEnd="@drawable/email"
+        android:paddingTop="@dimen/dim_m"
+
+        android:paddingEnd="@dimen/dim_m"
+        android:text=" تواصل معنا"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl"
+        android:layout_below="@id/Present"/>
+
+    <TextView
+        android:id="@+id/about_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:drawableEnd="@drawable/icon_about"
+        android:paddingEnd="@dimen/dim_m"
+        android:text=" عن التطبيق "
+        android:textColor="@color/Black"
+        android:paddingTop="@dimen/dim_m"
+
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:textSize="@dimen/dim_xl"
+        android:layout_below="@id/connect_Me"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:paddingTop="@dimen/dim_m"
+        android:drawableEnd="@drawable/ic_exit_to_app_black_24dp"
+        android:paddingEnd="@dimen/dim_m"
+        android:text=" الخروج "
+        android:textColor="@color/Black"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:textSize="@dimen/dim_xl"
+        android:layout_below="@id/about_app"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".MainActivity">
+<ImageView
+    android:id="@+id/view"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_alignParentEnd="true"
+    android:src="@mipmap/plantt"/>
+ <ImageView
+     android:layout_width="150dp"
+     android:layout_height="150dp"
+     android:layout_alignParentStart="true"
+     android:src="@mipmap/cropplant"
+     android:layout_alignParentBottom="true"/>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="@dimen/dim_4xl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/view"
+        android:src="@drawable/sofralogo" />
+
+
+    <Button
+        android:id="@+id/Main_Order_Food"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_m"
+        android:background="@drawable/shapebutton"
+        android:text="@string/order_food"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l" />
+
+    <Button
+        android:id="@+id/Main_Sale_Food"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Main_Order_Food"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dim_m"
+        android:background="@drawable/shapebutton"
+        android:text="@string/sale_food"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l" />
+</RelativeLayout>
+

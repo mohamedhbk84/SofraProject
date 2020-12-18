@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ui.Fragment.SaleFragment.BranchesCycle.About_appFragment">
+
+    
+    <TextView
+        android:id="@+id/m"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:layout_margin="@dimen/dim_xl"
+        android:gravity="center"
+        android:text="من نحن"
+        android:textSize="@dimen/dim_2xl"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginTop="@dimen/dim_7xl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_27xl"
+        android:maxLines="6"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl"
+        android:padding="@dimen/dim_m"
+        android:text=" هناك حقيقة مثبتة منذ زمن طويل وهي انا المحتوي المقروء لصفحة ما سيلهي لقاري عن التركيز عن الشكل الخارجي للناص او عن استخدام الطريقة لانها تعطي توزيعا طبيعا الي حد ما للاحرف  عوضا عن استخدام هنا يحتوي علي  علي هذا النص"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.ReguestFragment.BranchesCycle.ConfirmOrderDetailsClientFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dim_m"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_Order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_40"
+        android:layout_margin="@dimen/dim_m"
+        android:gravity="center"
+        android:text="تفاصيل الطلب"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/txt_Order"
+        android:layout_margin="@dimen/dim_l">
+
+        <LinearLayout
+            android:id="@+id/Rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+
+                android:id="@+id/confirmOrderDetailsFragmentClientEtNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="اضف ملاحظات"
+
+                android:padding="@dimen/dim_m"
+                android:textSize="@dimen/txt_size_xl" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/RV1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Card"
+        android:layout_marginTop="@dimen/dim_m"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:text="عنوان التوصيل"
+            android:textColor="@color/Black" />
+
+
+        <EditText
+            android:id="@+id/confirmOrderDetailsFragmentClientTvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:background="@null"
+            android:text="شارع الروضة - 22 "
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginBottom="@dimen/dim_m"
+            android:text=" الدفع"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Rv2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/RV1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="الدفع اونلاين"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="نقدا عند الاستلام"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_l" />
+    </LinearLayout>
+
+    <RadioGroup
+
+        android:id="@+id/confirmOrderDetailsFragmentClientRgContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rv2"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/address"
+        android:textColor="@color/red2">
+
+
+        <RadioButton
+            android:id="@+id/confirmOrderDetailsFragmentClientRbPayOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="154dp"
+            android:background="@drawable/circlefilter"
+            android:button="@drawable/radio_button1"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/confirmOrderDetailsFragmentClientRbCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/circlefilter"
+
+            android:button="@drawable/radio_button1"
+            android:checked="true" />
+        <!--android:padding="@dimen/dim_l"-->
+
+
+    </RadioGroup>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/confirmOrderDetailsFragmentClientRgContainer"
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_l"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dim_m">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/dim_m"
+                    android:text="المجموع"
+                    android:textSize="@dimen/txt_size_l" />
+
+                <TextView
+                    android:id="@+id/confirmOrderDetailsFragmentClientTvTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="110 ريال"
+                    android:padding="@dimen/dim_m"
+                    android:textSize="@dimen/txt_size_l" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/dim_m"
+                    android:text="خدمة التوصيل"
+                    android:textSize="@dimen/txt_size_l" />
+
+                <TextView
+                    android:id="@+id/confirmOrderDetailsFragmentClientTvDeliveryCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="110 ريال "
+                    android:padding="@dimen/dim_m"
+                    android:textSize="@dimen/txt_size_l" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/dim_m"
+                    android:text="المبلغ "
+                    android:textSize="@dimen/txt_size_l" />
+
+                <TextView
+                    android:id="@+id/confirmOrderDetailsFragmentClientTvTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="110 ريال"
+                    android:padding="@dimen/dim_m"
+                    android:textSize="@dimen/txt_size_l" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/Button_Confirm_Order"
+        android:layout_below="@id/cardView3"
+        android:layout_width="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_height="@dimen/album_dp_40"
+        android:background="@drawable/shapebutton"
+        android:textColor="@color/white"
+        android:text="تاكيد الطلب"/>
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

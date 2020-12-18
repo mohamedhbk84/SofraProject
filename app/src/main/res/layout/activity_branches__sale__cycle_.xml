@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.SaleActivity.Branches_Sale_Cycle_Activity">
+
+
+    <FrameLayout
+        android:id="@+id/Branche_Sale_Frame_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_5xl"
+        android:layout_marginBottom="@dimen/dim_m"/>
+</RelativeLayout>

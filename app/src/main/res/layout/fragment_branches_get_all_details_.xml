@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.SaleFragment.BranchesCycle.Branches_getAllDetails_Fragment">
+<android.support.v7.widget.CardView
+    android:id="@+id/tthro1"
+android:layout_margin="@dimen/dim_m"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@color/Black"
+    android:outlineAmbientShadowColor="@color/cardview_light_background"
+    app:cardCornerRadius="@dimen/dim_m"
+    >
+    <TextView
+        android:id="@+id/tthro"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="صورة للمنتج"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_l" />
+</android.support.v7.widget.CardView>
+
+
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/Branche_Details_Image"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tthro1"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dim_m"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginTop="@dimen/dim_m"
+        android:background="@color/pubic"
+        android:scaleType="centerCrop"
+        app:siShape="@drawable/shape_rounded_all_rectangle"
+        tools:ignore="VectorDrawableCompat" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Branche_Details_getName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Branche_Details_Image"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_xl"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dim_l"
+        app:cardCornerRadius="@dimen/dim_xl">
+
+
+        <EditText
+            android:id="@+id/Branche_Details_getName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="اسم المنتج "
+            android:paddingStart="@dimen/dim_xl"
+            android:paddingEnd="@dimen/dim_xl" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Branche_Details_getWasfa1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Branche_Details_getName1"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_xl"
+        android:layout_marginBottom="@dimen/dim_m"
+        app:cardCornerRadius="@dimen/dim_xl"
+        app:cardElevation="@dimen/dim_l">
+
+
+        <EditText
+            android:id="@+id/Branche_Details_getWasfa"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_12xl"
+            android:layout_below="@id/Branche_Details_getName1"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_xl"
+            android:layout_marginBottom="@dimen/dim_m"
+            android:backgroundTint="@color/white"
+            android:hint="وصف مختصر" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Branche_Details_money1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Branche_Details_getWasfa1"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:layout_marginTop="@dimen/dim_m"
+        android:elevation="@dimen/dim_l"
+        app:cardCornerRadius="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_xl"
+        app:cardElevation="@dimen/dim_l"
+
+        android:layout_marginBottom="@dimen/dim_m">
+
+        <EditText
+            android:id="@+id/Branche_Details_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+             android:paddingStart="@dimen/dim_xl"
+            android:paddingEnd="@dimen/dim_xl"
+            android:hint="السعر" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Branche_Details_Time_to_Offer1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Branche_Details_money1"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_xl"
+        app:cardCornerRadius="@dimen/dim_xl"
+        android:elevation="@dimen/dim_l"
+        app:cardElevation="@dimen/dim_l"
+        android:layout_marginBottom="@dimen/dim_m"
+        >
+
+
+
+    <EditText
+        android:id="@+id/Branche_Details_Time_to_Offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:paddingStart="@dimen/dim_l"
+        android:paddingEnd="@dimen/dim_l"
+        android:hint="مدة تجهيز الطلب" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/getBranche_Details_Btn_edit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Branche_Details_Time_to_Offer1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shapebutton"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:gravity="center"
+        android:text="تعديل"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_xl" />
+
+</RelativeLayout>

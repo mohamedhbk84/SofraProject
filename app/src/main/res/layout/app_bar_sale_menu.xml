@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.SaleActivity.Home_Sale_Cycle_Activty">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/pubic">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dim_m"
+            android:src="@mipmap/calculator" />
+
+        <TextView
+            android:id="@+id/App_Bar_TextViewChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_size_l" />
+
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:padding="@dimen/dim_m"
+            android:src="@mipmap/alert" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/notificationCount"-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:layout_alignStart="@+id/notification"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginStart="26dp"-->
+            <!--android:layout_marginTop="@dimen/dim_m"-->
+            <!--android:layout_marginEnd="@dimen/dim_m"-->
+            <!--android:background=""-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/dim_m"-->
+            <!--android:text="2"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/txt_size_sss" />-->
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+</RelativeLayout>
+
+
+<include
+        layout="@layout/activity_home__sale__cycle__activty" />
+
+
+</LinearLayout>

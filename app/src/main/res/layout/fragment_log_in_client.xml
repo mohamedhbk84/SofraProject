@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginbackfround"
+    tools:context=".ui.Fragment.ReguestFragment.BranchesCycle.LogInClientFragment">
+
+
+
+    <TextView
+        android:id="@+id/text_thro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/txt_size_2xl"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:layout_margin="@dimen/dim_7xl"/>
+    <EditText
+        android:id="@+id/User_Login_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_thro"
+        android:layout_margin="@dimen/dim_m"
+        android:drawableEnd="@drawable/email"
+        android:hint="@string/Email"
+        android:textSize="@dimen/txt_size_ll"
+        android:textColor="@color/Black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/User_Login_Password"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dim_m" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/User_Login_Password"
+        android:layout_below="@+id/User_Login_Email"
+        android:layout_marginTop="@dimen/dim_7xl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textSize="@dimen/txt_size_ll"
+            android:inputType="textPassword"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/User_Login_ForgetPassword"
+        android:layout_below="@id/User_Login_Password"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:textColor="@color/Black"
+        android:text="@string/forgetpassword"/>
+    <Button
+        android:id="@+id/User_Login_Signin"
+        android:layout_below="@id/User_Login_ForgetPassword"
+        android:layout_width="220dp"
+        android:layout_margin="@dimen/dim_m"
+        android:background="@drawable/shapebutton"
+        android:layout_centerInParent="true"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/User_Create_Register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/register"
+        android:textSize="@dimen/txt_size_l"
+
+        android:textColor="@color/pubic"
+        android:text="@string/go_create_account"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

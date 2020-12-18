@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">sofra</string>
+    <string name="order_food">طلب طعام</string>
+    <string name="sale_food">بيع طعام</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgetpassword">هل نسيت كلمة المرور ؟</string>
+    <string name="go_create_account">ليس لديك حساب ؟ اضغط هنا</string>
+    <string name="name_Restrant"> اسم المطعم</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="phone">الجوال</string>
+    <string name="phone1">كلمة المرور</string>
+    <string name="confirmpassword">تاكيد كلمة المرور</string>
+
+    <string name="contine">متابعة</string>
+    <string name="mazen_mohamed">مازن محمد</string>
+    <string name="Client">العميل :</string>
+    <string name="number">رقم الطلب : </string>
+    <string name="Total">الاجمالي : </string>
+    <string name="address">العنوان :</string>
+    <string name="title_activity_reguest__cycle__inclade">Reguest_Cycle_IncladeActivity</string>
+    <string name="title_activity_reguest__cycle">Reguest_CycleActivity</string>
+</resources>

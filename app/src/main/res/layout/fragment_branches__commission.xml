@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.SaleFragment.BranchesCycle.Branches_CommissionFragment">
+
+    <TextView
+        android:id="@+id/Txt_Commision"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dim_m"
+        android:gravity="center"
+        android:text=" العمولة"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_2xl" />
+
+    <TextView
+        android:id="@+id/Branche_commission_txt_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_9xl"
+        android:layout_below="@id/Txt_Commision"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:lines="2"
+        android:text=" يرجي تحويل 10% من الربح المبالغ فية في مدة اقصاها شهر وجميع الطلبات مسجلة علي حسابك"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Branche_commission_txt_details"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dim_m"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=" مبيعات المطعم : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:id="@+id/Money_Txt_SaleFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 5443 ريال "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Money_Txt_CommissionApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=" عمولات التطبيق : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4353 ريال "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Money_Txt_paidMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="  ماتم سددة : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 87489 ريال "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Money_Txt_Offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="  المتبقي  : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 246 ريال "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_8xl"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="الراجحي : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 24677574 "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lll1"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=" الاهلي : "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+
+        <TextView
+            android:id="@+id/Name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 246723574 "
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_xl" />
+    </LinearLayout>
+</RelativeLayout>

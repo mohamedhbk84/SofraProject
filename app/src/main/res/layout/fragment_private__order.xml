@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.ReguestFragment.BranchesCycle.Private_OrderFragment">
+
+
+    <ImageView
+        android:id="@+id/Image_View_Food_menu"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:background="@drawable/recyclerimage"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/Image_View_Food_menu"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginEnd="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:background="@drawable/recyclerimage"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Name_Foodmenu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/dim_m"
+                android:text="تشيكن فريز"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dim_xl" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name_Foodmenu"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:text="شوية فراخ فل ودجاج وبسلطاتهم وبحواجب"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:id="@+id/sale_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim_5xl"
+                android:text=" 20 "
+                android:textColor="@color/red"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:id="@+id/sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:text="sale :"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dim_l" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_below="@id/Linear"
+        android:layout_margin="@dimen/dim_m"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/album_dp_50"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="مدة تجهيز الطلب :"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_xl" />
+
+            <TextView
+                android:id="@+id/preparing_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/album_dp_50"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dim_22xl"
+                android:gravity="center"
+                android:text="20 دقيقة "
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_xl"
+
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_below="@id/ll1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dim_m"
+        android:text="طلب خاص "
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl" />
+<android.support.v7.widget.CardView
+    android:id="@+id/Add_New_Order1"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txt"
+    android:layout_marginStart="@dimen/dim_l"
+    android:layout_marginEnd="@dimen/dim_l"
+    android:layout_marginTop="@dimen/dim_m"
+    android:layout_marginBottom="@dimen/dim_m"
+    >
+    <EditText
+        android:id="@+id/Add_New_Order"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:background="@drawable/recyclerimage"
+        android:hint="ادخل طلبك هنا"
+
+        android:textSize="@dimen/dim_xl" />
+</android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/Add_New_Order1"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="الكمية"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l" />
+
+
+
+            <TextView
+                android:id="@+id/Show_Count"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l" />
+
+            <ImageButton
+                android:id="@+id/mainase_the_number"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginStart="@dimen/dim_8xl"
+                android:src="@drawable/ic_plus_one_black_24dp" />
+            <ImageButton
+                android:id="@+id/Possitive_the_number"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim_8xl"
+                android:src="@drawable/ic_exposure_neg_1_black_24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/IMage_Shopping"
+        android:layout_width="@dimen/album_dp_50"
+        android:layout_height="@dimen/album_dp_50"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_shopping_cart_black_24dp"
+        android:layout_below="@id/l"/>
+</RelativeLayout>

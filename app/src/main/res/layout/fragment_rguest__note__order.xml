@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.ReguestFragment.Rguest_Note_OrderFragment">
+    <ImageView
+        android:id="@+id/Image_View"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/res_logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:background="@drawable/circleimage"/>
+    <TextView
+        android:id="@+id/Name_Order"
+        android:layout_below="@id/Image_View"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dim_m"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:text="molll"
+        android:textSize="@dimen/dim_xl"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/Name_Order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tabs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/backgroundcolor">
+
+        </android.support.design.widget.TabLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/home_tabs1"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

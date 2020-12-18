@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dim_m"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/setAdapterItemsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dim_9xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_xl"
+        app:cardBackgroundColor="@color/backgroundcolor"
+        app:cardCornerRadius="@dimen/dim_xl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_m"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/album_dp_50"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/Txt_getTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="خصومات هائلة تصل 10%"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_size_l" />
+
+                <Button
+                    android:id="@+id/Buttton_getOffer"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:layout_marginTop="@dimen/dim_xl"
+                    android:layout_marginBottom="@dimen/dim_m"
+                    android:background="@drawable/shapebutton"
+                    android:paddingStart="@dimen/dim_l"
+                    android:paddingEnd="@dimen/dim_l"
+                    android:text="احصل علية الان"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim_m" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setAdapterItemsCardView"
+        android:layout_alignTop="@+id/setAdapterItemsCardView"
+        android:layout_alignBottom="@+id/setAdapterItemsCardView"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        app:cardCornerRadius="45dp">
+
+        <LinearLayout
+
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="@dimen/dim_m"
+                android:id="@+id/getAdapterNewOfferImgPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_xl"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

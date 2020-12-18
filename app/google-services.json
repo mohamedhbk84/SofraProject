@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "830105270248",
+    "firebase_url": "https://sofra-689eb.firebaseio.com",
+    "project_id": "sofra-689eb",
+    "storage_bucket": "sofra-689eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830105270248:android:d308364c98fe0b4b",
+        "android_client_info": {
+          "package_name": "com.example.sofra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830105270248-p2aq4h3musi2gearl6dk8eu0h26l2vgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sofra",
+            "certificate_hash": "38c78d530da3eb6df0b95f11fed8638515049d86"
+          }
+        },
+        {
+          "client_id": "830105270248-2dpc583bqftqp2uqbfghggl01tubcpc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNXkgPU2KMBmUuR9oeK7-4r67dLvWAdGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830105270248-2dpc583bqftqp2uqbfghggl01tubcpc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

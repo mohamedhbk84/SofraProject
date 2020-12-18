@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/dim_m"
+        android:background="@drawable/commentandrateshipe">
+        <TextView
+            android:id="@+id/name_comment_and_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_xl"
+            android:text="محمد احمد"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dim_m"
+            android:textColor="@color/Black"/>
+        <TextView
+            android:id="@+id/Description_comment_and_rate"
+            android:layout_below="@id/name_comment_and_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="حمحم نيبلحلةميب ليبتنلب س يرىسيب رينبرنيبىلنيبى "
+            android:textColor="@color/Black"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:textSize="@dimen/dim_xl"/>
+        <ImageView
+            android:id="@+id/Image_comment_and_rate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:src="@drawable/background"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

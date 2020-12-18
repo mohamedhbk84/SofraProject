@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_m"
+    tools:ignore="ContentDescription">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="@dimen/dim_l"
+        app:cardElevation="@dimen/dim_m">
+
+        <RelativeLayout
+            android:baselineAligned="false"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                android:id="@+id/Details_Order_Recycler_Image"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dim_3xl"
+
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                app:siShape="@drawable/shape_rounded_all_rectangle"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <TextView
+
+                android:id="@+id/Name_Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Details_Order_Recycler_Image"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_12xl"
+                android:text="تشيكن فريزار "
+                android:textColor="@color/Black"
+                android:textSize="@dimen/txt_size_2xl" />
+
+            <TextView
+                android:id="@+id/setAdapterCartTvDetailsItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name_Order"
+                android:layout_alignEnd="@+id/Details_Order_Recycler_Image"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_12xl"
+                android:text="التفاصيل"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/txt_size_m" />
+
+            <TextView
+                android:id="@+id/Details_Order_Recycler_Txt_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginTop="@dimen/dim_l"
+                android:text="ريال 20"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/txt_size_l" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/setAdapterCartTvDetailsItem"
+            android:layout_marginStart="@dimen/dim_5xl"
+            android:layout_marginTop="@dimen/dim_9xl"
+            android:layout_marginEnd="@dimen/dim_10xl"
+            android:layout_marginBottom="@dimen/dim_m"
+            android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="الكمية"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/dim_l" />
+            <ImageButton
+                android:id="@+id/mainase_the_number"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:src="@drawable/ic_plus_one_black_24dp" />
+
+                <TextView
+                    android:id="@+id/Show_Count"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/dim_l" />
+
+
+
+                <ImageButton
+                    android:id="@+id/Possitive_the_number"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dim_8xl"
+                    android:src="@drawable/ic_exposure_neg_1_black_24dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Image_Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_7xl"
+            android:src="@drawable/icon_remove"
+            android:tint="@color/red" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

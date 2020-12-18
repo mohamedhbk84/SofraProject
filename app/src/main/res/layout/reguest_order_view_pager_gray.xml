@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Order_Image"
+            android:layout_width="@dimen/album_dp_100"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/dim_xl"
+            android:src="@drawable/loginbackfround" />
+
+
+
+            <TextView
+                android:id="@+id/Order_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim_13xl"
+                android:text="دجاج كنتاكي"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_xl" />
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dim_2xl"
+                android:id="@+id/lala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/order_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dim_l"
+                        android:layout_marginStart="@dimen/dim_16xl"
+                        android:text=" 848"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/dim_l" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_6xl"
+                        android:layout_marginTop="@dimen/dim_l"
+                        android:text=" order :"
+
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/dim_l" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/lala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/order_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dim_l"
+                        android:layout_marginStart="@dimen/dim_10xl"
+                        android:text=" 110 ريال"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/dim_l"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_3xl"
+                        android:layout_marginTop="@dimen/dim_l"
+                        android:text="Total :"
+
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/dim_l" />
+
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/Button_Accept"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:background="@drawable/acceptfood"
+            android:text="استلام"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Button_Reject"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Button_Accept"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dim_m"
+            android:background="@drawable/exitfood"
+            android:text="رفض"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

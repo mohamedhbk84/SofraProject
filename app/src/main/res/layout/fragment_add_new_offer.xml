@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.SaleFragment.BranchesCycle.AddNewOFFerFragment">
+
+    <TextView
+        android:id="@+id/th_txt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dim_m"
+        android:gravity="center"
+        android:text="اضافة صورة العرض"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_xl" />
+
+    <ImageView
+        android:id="@+id/Add_Image_Offer"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/th_txt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:src="@mipmap/cropplant" />
+
+    <EditText
+        android:id="@+id/Add_Txt_NameOfOffer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Add_Image_Offer"
+        android:layout_margin="@dimen/dim_m"
+        android:hint="اسم العرض"
+        android:paddingEnd="@dimen/dim_m"
+
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dim_l"
+        />
+    <EditText
+        android:id="@+id/Add_Description"
+        android:textSize="@dimen/dim_l"
+        android:textColor="@color/Black"
+        android:hint="وصف مختصر"
+        android:paddingBottom="@dimen/dim_3xl"
+        android:paddingStart="@dimen/dim_m"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_9xl"
+        android:layout_below="@id/Add_Txt_NameOfOffer"
+        android:layout_margin="@dimen/dim_m"/>
+<TextView
+    android:id="@+id/Add_Data_In"
+    android:layout_width="150dp"
+    android:text="الي"
+    android:drawableStart="@drawable/birthday"
+    android:layout_height="50dp"
+    android:textSize="@dimen/dim_l"
+    android:paddingTop="@dimen/dim_l"
+    android:layout_below="@id/Add_Description"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="@dimen/dim_2xl"
+    android:layout_marginEnd="@dimen/dim_3xl"/>
+    <TextView
+        android:id="@+id/Add_Data_Out"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/birthday"
+       android:text="من"
+        android:textSize="@dimen/dim_l"
+        android:paddingTop="@dimen/dim_l"
+        android:layout_below="@id/Add_Description"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_3xl"/>
+    <Button
+        android:id="@+id/Add_Btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapebutton"
+        android:text="اضف"
+        android:textSize="@dimen/dim_l"
+        android:textColor="@color/white"
+        android:layout_below="@id/Add_Data_Out"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_5xl"/>
+
+</RelativeLayout>

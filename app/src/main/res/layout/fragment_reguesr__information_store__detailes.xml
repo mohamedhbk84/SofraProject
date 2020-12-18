@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.ReguestFragment.HomeCycle.Reguesr_INformationStore_DetailesFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="@dimen/dim_m">
+        <LinearLayout
+            android:id="@+id/lm"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l"
+                android:text="  الحالة :"
+
+                android:layout_marginTop="@dimen/dim_m"/>
+            <TextView
+                android:id="@+id/information_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/Black"
+                android:layout_marginTop="@dimen/dim_m"
+                android:text="50 ريال"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:id="@+id/llla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lm"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l"
+                android:text=" المدينة    :"
+
+                android:layout_marginTop="@dimen/dim_m"/>
+            <TextView
+                android:id="@+id/information_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/Black"
+                android:layout_marginTop="@dimen/dim_m"
+                android:text="20 ريال"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:id="@+id/lm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llla"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l"
+                android:text="  الحي :"
+
+                android:layout_marginTop="@dimen/dim_m"/>
+            <TextView
+                android:id="@+id/information_Details_City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/Black"
+
+                android:layout_marginTop="@dimen/dim_m"
+                android:text="50 ريال"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lm1"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l"
+                android:text=" الحد الادني   :"
+
+                android:layout_marginTop="@dimen/dim_m"/>
+            <TextView
+                android:id="@+id/information_Details_Below_Money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/Black"
+                android:layout_marginTop="@dimen/dim_m"
+                android:text="20 ريال"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:id="@+id/bba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bb"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dim_l"
+                android:text="رسوم التوصيل  :"
+
+                android:layout_marginTop="@dimen/dim_m"/>
+            <TextView
+                android:id="@+id/information_Delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/Black"
+                android:layout_marginTop="@dimen/dim_m"
+                android:text="20 ريال"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

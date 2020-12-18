@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RoomDatabase.Add_Note_about_AppFragment">
+
+ <RelativeLayout
+     android:id="@+id/RE"
+     android:layout_centerInParent="true"
+     android:layout_width="350dp"
+     android:layout_height="350dp"
+     android:background="@drawable/rectanglenote">
+  <TextView
+      android:id="@+id/txt"
+      android:layout_width="match_parent"
+      android:layout_height="35dp"
+      android:textColor="@color/Black"
+      android:textSize="@dimen/dim_xl"
+      android:text="اختار تقيمك"
+      android:gravity="center"/>
+  <!--<LinearLayout-->
+      <!--android:id="@+id/lilayout"-->
+      <!--android:layout_below="@id/txt"-->
+      <!--android:layout_marginStart="@dimen/dim_m"-->
+      <!--android:layout_marginEnd="@dimen/dim_m"-->
+      <!--android:layout_marginTop="@dimen/dim_xl"-->
+      <!--android:layout_width="match_parent"-->
+
+      <!--android:layout_height="@dimen/album_dp_50">-->
+   <!--<ImageButton-->
+       <!--android:id="@+id/image1"-->
+       <!--android:layout_width="@dimen/album_dp_50"-->
+       <!--android:layout_height="50dp"-->
+       <!--android:layout_marginStart="@dimen/dim_m"-->
+       <!--android:layout_marginEnd="@dimen/dim_m"-->
+       <!--android:background="@drawable/ic_insert_emoticon_black_24dp"/>-->
+   <!--<ImageButton-->
+       <!--android:id="@+id/image2"-->
+       <!--android:layout_width="50dp"-->
+       <!--android:layout_height="@dimen/album_dp_50"-->
+       <!--android:background="@drawable/ic_sentiment_dissatisfied_black_24dp"-->
+       <!--android:layout_marginStart="@dimen/dim_m"-->
+       <!--android:layout_marginEnd="@dimen/dim_m"/>-->
+   <!--<ImageButton-->
+       <!--android:id="@+id/image3"-->
+       <!--android:layout_width="@dimen/album_dp_50"-->
+       <!--android:layout_height="@dimen/album_dp_50"-->
+       <!--android:background="@drawable/ic_sentiment_satisfied_black_24dp"-->
+       <!--android:layout_marginStart="@dimen/dim_m"-->
+       <!--android:layout_marginEnd="@dimen/dim_m"/>-->
+
+   <!--<ImageButton-->
+       <!--android:id="@+id/image4"-->
+       <!--android:layout_width="41dp"-->
+       <!--android:layout_height="@dimen/album_dp_50"-->
+       <!--android:layout_marginStart="@dimen/dim_m"-->
+       <!--android:layout_marginEnd="@dimen/dim_m"-->
+       <!--android:background="@drawable/ic_sentiment_very_dissatisfied_black_24dp" />-->
+   <!--<ImageButton-->
+       <!--android:id="@+id/image5"-->
+       <!--android:layout_width="@dimen/album_dp_50"-->
+       <!--android:layout_height="@dimen/album_dp_50"-->
+       <!--android:background="@drawable/ic_sentiment_very_satisfied_black_24dp"-->
+       <!--android:layout_marginStart="@dimen/dim_m"/>-->
+
+  <!--</LinearLayout>-->
+  <com.example.sofra.helper.EmotionRating
+      android:id="@+id/Rating_action"
+      android:layout_width="wrap_content"
+      android:layout_marginTop="@dimen/dim_xl"
+      android:foregroundGravity="center"
+      android:layout_centerInParent="true"
+      android:layout_below="@id/txt"
+      android:layout_height="wrap_content" />
+  <EditText
+      android:id="@+id/Edit_Add_Note"
+      android:layout_below="@id/Rating_action"
+      android:layout_width="250dp"
+      android:layout_height="120dp"
+android:layout_marginTop="@dimen/dim_3xl"
+      android:hint="... اضف تعليقك هنا"
+      android:paddingBottom="@dimen/dim_8xl"
+      android:layout_centerInParent="true"
+      android:background="@drawable/recyclerimage" />
+  <Button
+      android:id="@+id/Add_Button"
+      android:layout_width="120dp"
+      android:layout_height="@dimen/album_dp_30"
+      android:background="@drawable/shapebutton"
+      android:textColor="@color/white"
+      android:layout_below="@id/Edit_Add_Note"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="@dimen/dim_xl"
+      android:text="اضف"/>
+
+
+ </RelativeLayout>
+
+</RelativeLayout>

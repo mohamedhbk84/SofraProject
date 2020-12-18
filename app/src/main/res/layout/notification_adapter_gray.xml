@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dim_m"
+        android:layout_marginBottom="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_m">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/dim_l"
+            android:gravity="center"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:id="@+id/notificationAdapterTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/notificationAdapterTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_toStartOf="@+id/notification_adapter"
+                android:layout_toEndOf="@+id/notificationAdapterTimeTxt" />
+
+            <ImageView
+                android:id="@+id/notification_adapter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+
+                android:src="@mipmap/alert" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

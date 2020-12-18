@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/dim_m"
+        android:background="@drawable/rectanglenote">
+
+        <ImageView
+            android:id="@+id/New_Reguest_Img_View"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:background="@color/red1" />
+
+        <TextView
+            android:id="@+id/Txt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_20xl"
+            android:text="@string/Client"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:id="@+id/New_Reguest_Txt_Name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_17xl"
+            android:layout_marginTop="@dimen/dim_l"
+            android:text="mohamed ahmed"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:id="@+id/Textthrooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Txt_three"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_20xl"
+            android:text="@string/number"
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:id="@+id/New_Reguest_Txt_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Txt_three"
+
+            android:layout_marginStart="@dimen/dim_25xl"
+            android:layout_marginTop="@dimen/dim_m"
+            android:text="22354"
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Textthrooo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_21xl"
+            android:text="@string/Total"
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:id="@+id/New_Reguest_Txt_Total_Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Textthrooo"
+            android:layout_marginStart="@dimen/dim_25xl"
+            android:layout_marginTop="@dimen/dim_m"
+            android:text="110 ريال "
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_21xl"
+            android:text="@string/address"
+            android:textColor="@color/red2" />
+
+        <TextView
+            android:id="@+id/New_Reguest_Txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total"
+            android:layout_marginStart="@dimen/dim_25xl"
+            android:layout_marginTop="8dp"
+            android:text="127-شارع المعز ابن علي - حي الروضة"
+            android:textColor="@color/red2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/dim_m"
+        android:layout_marginTop="@dimen/dim_19xl"
+        android:layout_marginEnd="@dimen/dim_m"
+        >
+
+        <Button
+            android:id="@+id/Details_Order_Btn_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/connect"
+            android:drawableStart="@drawable/phone"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dim_m"
+            android:text="اتصال"
+            android:layout_margin="@dimen/dim_m"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_l" />
+
+        <Button
+            android:id="@+id/Details_Order_Btn_accept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/accept"
+            android:drawableStart="@drawable/accept_24dp"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dim_m"
+            android:text="قبول"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dim_m"
+            android:textSize="@dimen/dim_l" />
+
+        <Button
+            android:id="@+id/Details_Order_Btn_exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/exit"
+            android:drawableStart="@drawable/ic_clear_black_24dp"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dim_m"
+            android:layout_margin="@dimen/dim_m"
+            android:text="رفض"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_l"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
